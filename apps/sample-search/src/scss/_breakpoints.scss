@@ -1,0 +1,14 @@
+$small-break: 600px;
+$mid-break: 850px;
+
+@mixin small-break {
+	@media (max-width: #{$small-break}) {
+		@content;
+	}
+}
+
+@mixin mid-break {
+	@media (max-width: #{$mid-break}) {
+		@content;
+	}
+}

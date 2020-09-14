@@ -1,0 +1,6 @@
+<main>
+  <example-org-searhbar (searchByQueryEmitter)="searchByQuery($event)"></example-org-searhbar>
+  <example-org-tile-grid [images]="images"></example-org-tile-grid>
+  <example-org-load-more [images]="images" (loadMoreEmitter)="loadImages()"></example-org-load-more>
+  <example-org-image-viewer [removeScrollLock]="removeScrollLock" (setSelectedImage)="setSelectedImage($event)" [selectedImage]="selectedImage" [images]="images"></example-org-image-viewer>
+</main>

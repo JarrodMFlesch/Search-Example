@@ -1,0 +1,67 @@
+@import '../../scss/styles';
+
+$input-padding: 10px;
+
+form {
+  .heading {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
+
+  .searchbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  input {
+    width: 80%;
+    padding: $input-padding;
+    border: 2px solid black;
+  }
+
+  button {
+    margin-left: 1rem;
+    border: none;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-weight: 300;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 300ms ease;
+    align-self: stretch;
+    padding: $input-padding 50px;
+
+    &:hover {
+      background-color: rgba(black, .75);
+    }
+  }
+
+  input,
+  button {
+    border-radius: 3px;
+    min-height: 50px;
+    font-size: 2rem;
+  }
+
+  @include mid-break {
+    .searchbox-wrapper {
+      flex-wrap: wrap;
+    }
+
+    input,
+    button {
+      width: 100%;
+      min-height: 25px;
+      font-size: 1.5rem;
+    }
+
+    button {
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  }
+}

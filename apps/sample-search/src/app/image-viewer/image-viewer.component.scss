@@ -1,0 +1,38 @@
+.image-viewer {
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(white, .7);
+  backdrop-filter: blur(3px);
+
+  .button-container {
+    display: flex;
+    position: absolute;
+    bottom: 0; right: 0; left:0
+  }
+
+  .button {
+    flex: 1;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px 15px;
+    transition: 300ms ease;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 2px white;
+
+    &:hover {
+      background-color: rgba(black, .75);
+    }
+
+    &.close {
+      flex: .5;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

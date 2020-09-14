@@ -1,0 +1,15 @@
+@import '../../scss/styles';
+
+:host {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+
+  @include mid-break {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include small-break {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

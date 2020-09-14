@@ -1,0 +1,8 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+  <h1 class="heading">Image Search</h1>
+
+  <div class="searchbox-wrapper">
+    <input name="searchbox" ngModel #searchbox="ngModel">
+    <button>Search</button>
+  </div>
+</form>

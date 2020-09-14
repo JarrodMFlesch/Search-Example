@@ -1,0 +1,18 @@
+@import '../scss/styles.scss';
+
+:host {
+  display: block;
+  font-family: sans-serif;
+  min-width: 300px;
+  max-width: 80%;
+  margin: 50px auto;
+
+  @include small-break {
+    max-width: unset;
+    margin: 25px 25px;
+  }
+}
+
+.tile-image__wrapper {
+  margin: 20px;
+}
